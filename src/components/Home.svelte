@@ -2,40 +2,40 @@
 	import Navbar from './Navbar.svelte';
 </script>
 
-<main>
-	<Navbar />
-	
-	<header>
-		<h1>Virtual Olympiad</h1>
-		<p class = "header-description">STEM Olympiad Organization aiming to help students learn and have fun</p>
-	</header>
-	
-	<section class = "cards">
-		<article class = "card contests-card">
-			<h3>VOMO 2022</h3>
-			<p>(Probably not) Coming soon...</p>
-			<footer>
-				<a href = "/contests#Past_Problems">Past Contests >></a>
-			</footer>
-		</article>
-		<article class = "card trainer-card">
-			<h3>VOMP - VO Mock Platform</h3>
-			<p>Platform for hosting multiplayer mock contests in a competitive style using problems from past contests</p>
-			<footer>
-				<a href = "/VOMP">Visit >></a>
-			</footer>
-		</article>
-	</section>
-</main>
+<header>
+	<div class = "header-title">
+		<h1>Math et al.</h1>
+		<p class = "header-description">STEM organization aiming to help students learn and have fun</p>
+	</div>
+</header>
+
+<section class = "cards">
+	<article class = "card">
+		<h3>MEA Contest 2022</h3>
+		<p>(Probably not) Coming soon...</p>
+		<footer>
+			<a href = "/contests#Past_Problems">Past Contests >></a>
+		</footer>
+	</article>
+	<article class = "card">
+		<h3>Virtual Olympiad</h3>
+		<p>Platform for hosting competitive multiplayer mock contests</p>
+		<footer>
+			<a href = "/VOMP">Visit >></a>
+		</footer>
+	</article>
+</section>
 
 <style lang="scss">
-	main {
-		text-align: center;
-		padding: 1em;	
-		margin: 0 auto;
-	}
+	@import '../styles/colors';
 
 	header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		height: clamp(250px, 50vh, 500px);
+
 		.header-description {
 			color: #666;
 			font-style: italic;
@@ -47,21 +47,20 @@
 		align-items: center;
 		justify-content: center;
 
+		height: 200px;
+
 		> .card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+
+			height: 100%;
 			width: clamp(300px, 30%, 600px);
-		}
-	}
+			margin: 20px;
+			padding: 10px 0;
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
+			border-top: 2px $blue-main solid;
 		}
 	}
 </style>

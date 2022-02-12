@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "page": "^1.11.6",
+    "postcss": "^8.4.6",
     "sirv-cli": "^2.0.0"
   }
 }

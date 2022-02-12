@@ -1,29 +1,37 @@
 <nav>
-    <div class = "header-anchor-left">
+    <div class = "nav-anchor-left">
         <a href = "/">Home</a>
         <a href = "/about">About</a>
         <a href = "/team">Team</a>
         <a href = "/contests">Contests</a>
         <a href = "/VOMP?redirect=true">VOMP</a>
     </div>
-    <div class = "header-anchor-right">
+    <div class = "nav-anchor-right">
         <div>Portal</div>
     </div>
 </nav>
 
 <style lang="scss">
     nav {
+		position: sticky;
+
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 
-		width: 100%;
+		top: 0;
+		height: 30px;
+		width: calc(100% - 2em);
 
-		.header-anchor-left {
+		padding: 1em;
+
+		background-color: #fff;
+
+		.nav-anchor-left {
 			margin-right: auto;
 		}
 
-		.header-anchor-right {
+		.nav-anchor-right {
 			margin-left: auto;
 		}
 
