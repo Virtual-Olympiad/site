@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Navbar from './Navbar.svelte';
 </script>
 
 <h1>About</h1>

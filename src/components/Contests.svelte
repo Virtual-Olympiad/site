@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Navbar from './Navbar.svelte';
-
 	interface Contest {
 		name: string;
 		year: number;

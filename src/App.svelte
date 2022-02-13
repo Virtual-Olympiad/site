@@ -4,6 +4,7 @@
 	import About from './components/About.svelte';
 	import Contests from './components/Contests.svelte';
 	import Team from './components/Team.svelte';
+	import NotFound from './components/404.svelte';
 	import Navbar from './components/Navbar.svelte';
 	import Footer from './components/Footer.svelte';
 	import type { SvelteComponentDev } from "svelte/internal";
@@ -17,6 +18,7 @@
 	router ('/vo', () => {
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});
+	router ('*', () => [page, title] = [NotFound, '404 • MEA']);
 
 	router.start();
 </script>
@@ -30,7 +32,6 @@
 
 <Navbar />
 <main>
-	
 	<svelte:component this={page} />
 	<Footer />
 </main>
