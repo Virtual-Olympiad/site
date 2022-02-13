@@ -14,7 +14,7 @@
 	router ('/about', () => [page, title] = [About, 'About • MEA']);
 	router ('/team', () => [page, title] = [Team, 'Team • MEA']);
 	router ('/contests', () => [page, title] = [Contests, 'Contests • MEA']);
-	router ('/VOMP', () => {
+	router ('/vo', () => {
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});
 

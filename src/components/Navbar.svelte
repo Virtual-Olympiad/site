@@ -4,7 +4,7 @@
         <a href = "/about">About</a>
         <a href = "/team">Team</a>
         <a href = "/contests">Contests</a>
-        <a href = "/VOMP?redirect=true">VOMP</a>
+        <a href = "/vo">VO</a>
     </div>
     <div class = "nav-anchor-right">
         <div>Portal</div>

@@ -1,0 +1,6 @@
+# Netlify routing config
+
+/about      /
+/team       /
+/contests   /
+/vo         / 

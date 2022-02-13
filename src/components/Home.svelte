@@ -21,7 +21,7 @@
 		<h3>Virtual Olympiad</h3>
 		<p>Platform for hosting competitive multiplayer mock contests</p>
 		<footer>
-			<a href = "/VOMP">Visit >></a>
+			<a href = "/vo">Visit >></a>
 		</footer>
 	</article>
 </section>
