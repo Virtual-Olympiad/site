@@ -33,8 +33,8 @@
 <Navbar />
 <main>
 	<svelte:component this={page} />
-	<Footer />
 </main>
+<Footer />
 
 <style lang="scss" global>
 	@import './styles/colors';
@@ -48,17 +48,12 @@
 
 	main {
 		text-align: center;
-		padding: 1em;	
-		max-width: 240px;
-		
+		padding: 1em;
+
+		min-height: 100vh;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>

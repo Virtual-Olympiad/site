@@ -13,15 +13,15 @@
 
 <style lang="scss">
     nav {
-		position: sticky;
+		position: fixed;
 
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 
 		top: 0;
-		height: 30px;
-		width: calc(100% - 2em);
+		height: 50px;
+		width: 100%;
 
 		padding: 1em;
 
