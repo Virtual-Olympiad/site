@@ -38,8 +38,6 @@
 	<h3>Format</h3> 
 	<p>Open - Qualifying Arena: 5+3. Top 8 from Arena move on to the finals with a Bracket Knockout: 10+3 format. Ties in Knockout are settled with an armageddon: White 5+0, Black 4+0 but White must win. Top finishers win prizes.</p>
 	<p>U1200 - Arena: 5+3. Top finishers win prizes.</p>
-	<p>Open - Qualifying Arena @ April 3, Top 8 Knockout Bracket @ April 10</p>
-
 	
 	<h3>Sign up</h3> 
 	<p>Fill out the <a target = "_blank" href = "https://forms.gle/mSLgzZRGNoPL2ikS8">sign up form</a></p>
