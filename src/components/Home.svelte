@@ -23,7 +23,7 @@
         <h3>CHESSKON</h3>
         <p>Chess tourney with awesome prizes and 100+ projected participants</p>
         <footer>
-            <a href="/chesskon">Details >></a>
+            <a href="/contests/chesskon">Details >></a>
         </footer>
     </article>
     <article class="card">
