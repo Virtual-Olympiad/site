@@ -4,13 +4,15 @@
 <h1>About</h1>
 <section class = "about">
 	<article class = "about-founding">
-		<h3>Founding</h3>
-		<p>Math et al., also known as MEA, was founded in late 2021. Originally solely consisting of the Virtual Olympiad project, it evolved into a full STEM organization in early 2022.</p>
+		<h3>Math et Al</h3>
+		<p>Math et al, also known as MEA, was founded in late 2021. Originally solely consisting of the Virtual Olympiad project, we evolved into a full STEM organization by early 2022.</p>
+		<p>Our goal is to make competitive math (et al) more fun and enjoyable. We host many fun events in math, chess, programming, and more. If you're interested in joining our team or helping out for an event, apply <a href="/apply">here</a>.</p>
 	</article>
 
 	<article class = "about-projects">
 		<h3>Virtual Olympiad</h3>
-		<p>TCC help with description pls</p>
+		<p>Virtual Olympiad (VO or VOLY) is an online multiplayer practice platform for the AMC and AIME (and more to come!). Host highly customizable practice contests using questions from past contests and compete against your friends. VO not only helps you prepare for the AMC/AIME, but also provides a fun and competitive spin to contest math.</p>
+		<p><a href = "/vo">Visit >></a></p>
 	</article>
 </section>
 

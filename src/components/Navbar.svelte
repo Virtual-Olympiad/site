@@ -12,6 +12,8 @@
 </nav>
 
 <style lang="scss">
+	@import '../styles/colors';
+
     nav {
 		position: fixed;
 
@@ -20,12 +22,13 @@
 		justify-content: flex-start;
 
 		top: 0;
-		height: 50px;
+		height: 3em;
 		width: 100%;
 
 		padding: 1em;
 
-		background-color: #fff;
+		background-color: $blue-main;
+		color: #fff;
 
 		.nav-anchor-left {
 			margin-right: auto;
@@ -40,6 +43,7 @@
 
 			div, a {
 				padding: 0 10px;
+				color: #fff;
 			}
 		}
 	}

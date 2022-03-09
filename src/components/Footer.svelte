@@ -21,7 +21,7 @@
 
 	<div class = "footer-events">
 		<h3>Events</h3>
-		<p><a href = "/chesskon">CHESSKON</a></p>
+		<p><a href = "/contests/chesskon">CHESSKON</a></p>
 		<p><a href = "/contests#Past_Problems">Past Problems</a></p>
 	</div>
 </footer>

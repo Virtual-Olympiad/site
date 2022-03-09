@@ -6,11 +6,7 @@
 	}
 
 	const contests: Contest[] = [
-		{
-			name: "UNMC",
-			year: 2022,
-			description: "Threetris!"
-		},
+		
 	];
 
 	contests.sort((a, b) => {
@@ -22,15 +18,16 @@
 	});
 </script>
 
-<h1>Contests</h1>
+<h1>Contests & Events</h1>
 
 <section class = "contests-current">
 	<div class = "bar"></div>
-	<h2>Math et al. Contest 2022</h2> 
+	<h2>CHESSKON</h2> 
 	<p>
-		Pausechamp?
+		CHESSKON is an international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
 	</p>
-	<img height = "100px" title = "Not Copium" alt = "Copium" src = "https://gumlet.assettype.com/afkgaming%2F2021-08%2F79649079-d0e7-4acd-853b-6a2b92797da3%2Fcopium_png.png?format=auto"/>
+	<p><a href="/contests/chesskon">Details >></a></p>
+	<img class = "contest-poster" src="/CHESSKON.png" alt = "CHESSKON Poster"/>
 </section>
 
 <section class = "contests-past" id = "Past_Problems">
@@ -45,10 +42,14 @@
 			<p>{contest.description}</p>
 		</article>
 	{/each}
+
+	{#if contests.length == 0}
+	<p>More to come...</p>
+	{/if}
 </section>
 
 <style lang="scss">
-	@import '../styles/colors';
+	@import '../../styles/colors';
 
 	section {
 		padding: 30px;
@@ -60,6 +61,11 @@
 		align-items: center;
 
 		width: clamp(300px, 60%, 1000px);
+	}
+
+	.contest-poster {
+		width: 100%;
+		max-width: 500px;
 	}
 
 	.bar {
