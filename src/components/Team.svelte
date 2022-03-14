@@ -76,16 +76,26 @@
 
 	.members {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: center;
 		align-items: center;
+		flex-wrap: wrap;
 
-		width: clamp(240px, 30%, 600px);
+		width: 100%;
 
 		.member {
-			width: 100%;
-
+			min-width: 300px;
+			
 			padding: 20px;
-			margin-bottom: 10px;
+			margin: 1em;
+
+			box-shadow: 3px 0px 3px #eee, -3px 0px 3px #eee;
+
+			transition: ease .3s;
+
+			&:hover {
+				transform: scale(1.02);
+			}
 
 			text-align: left;
 

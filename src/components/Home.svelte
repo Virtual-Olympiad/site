@@ -1,10 +1,43 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
+	import { beforeUpdate, onMount } from 'svelte';
+    import axios from 'axios';
     import HomeAnim from './HomeAnim.svelte';
 
-	let width: number, height:number;
+	let width: number, height: number;
+
+    type TargetType = 'site' | 'vo';
+    type AnnouncementType = 'dev' | 'event';
+
+    interface Announcement {
+        message: string;
+        url?: string;
+        target: TargetType;
+        type: AnnouncementType;
+    }
+
+    let announcements: Announcement[] = [];
+    let announcementToggle = [];
+
+    onMount(async ()=> {
+        announcements = (await axios('https://mathetal.polarity.workers.dev/api/announcements/site')).data as Announcement[];
+        announcementToggle = (new Array(announcements.length)).fill(true);
+    });
+
+    const toggleAnnouncement = (index: number) => {
+        announcementToggle[index] = false;
+    };
 </script>
+
+{#each announcements as announcement, i}
+    {#if announcementToggle[i]}
+        <div class = {"announcement announcement-type-" + announcement.type}>
+            <a href = {announcement.url}>
+                {announcement.message}
+            </a>
+            <div class = "announcement-toggle" on:click|once = {()=> toggleAnnouncement(i)}>&#x2715</div>
+        </div>
+    {/if}
+{/each}
 
 <header>
 	<div class = "header-background" bind:clientWidth={width} bind:clientHeight={height}>
@@ -38,10 +71,41 @@
 <style lang="scss">
     @import "../styles/colors";
 
+    h1 {
+        background-color: transparent;
+        color: $blue-main;
+
+        padding: initial;
+        margin: initial;
+    }
+
+    .announcement {
+        width: 100%;
+        padding: 1em;
+
+        a, div {
+            color: #fff;
+        }
+
+        &.announcement-type-dev {
+            background-color: $green-main;
+        }
+
+        &.announcement-type-event {
+            background-color: $blue-main;
+        }
+
+        .announcement-toggle {
+            float: right;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
     header {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-flow: row nowrap;
 
         height: clamp(250px, 50vh, 500px);
         width: 100%;
@@ -51,15 +115,21 @@
             font-style: italic;
         }
 
-		.header-background {
-			position: absolute;
-			top: 2em;
-			left: 0;
+        .header-title {
+            width: 100%;
+            flex: none;
+            margin-left: -100%;
 
+            align-self: center;
+        }
+
+		.header-background {
 			z-index: -1;
 
+            flex: none;
+
 			width: 100%;
-			height: 50%;
+			height: calc(100% + 20px);
 		}
     }
 
@@ -86,12 +156,26 @@
             box-shadow: 0px 3px 3px #666;
 
             border-top: 2px $blue-main solid;
+
+            transition: ease .3s;
+
+			&:hover {
+				transform: scale(1.02);
+			}
         }
     }
 
 	@media(max-width: 960px), (max-height: 640px){
-		.header-background {
-			display: none;
-		}
+        header {
+            background-color: #eee;
+
+            .header-title {
+                margin-left: 0;
+            }
+
+            .header-background {
+                display: none;
+            }
+        }
 	}
 </style>

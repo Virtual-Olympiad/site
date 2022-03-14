@@ -52,7 +52,16 @@
 	@import '../../styles/colors';
 
 	section {
+		margin: 1em 0;
 		padding: 30px;
+
+		box-shadow: 3px 0px 3px #eee, -3px 0px 3px #eee;
+
+		transition: ease .3s;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 	}
 
 	.contests-current, .contests-past{

@@ -20,11 +20,14 @@
 <article class = "contest-prizes">
 	<div class = "bar"></div>
 	<h2>Prizes</h2> 
-	FISKON Premium to the top contestants.
-	Virtual Olympiad Premium to the top contestants.
-	More prizes to come!
+	<p>
+		FISKON Premium to the top contestants.
+		Virtual Olympiad Premium to the top contestants.
+		More prizes to come!
+	</p>
+
+	<img class = "contest-poster" src="/CHESSKON.png" alt = "CHESSKON Poster"/>
 </article>
-<img class = "contest-poster" src="/CHESSKON.png" alt = "CHESSKON Poster"/>
 <article class = "contest-info" id = "Info">
 	<div class = "bar"></div>
 	<h2>Info</h2> 
@@ -52,10 +55,21 @@
 
 <style lang="scss">
 	@import '../../styles/colors';
-	.contest-intro, .contest-prizes, .contest-info, .contest-sponsors {
+
+	article {
+		margin: 1em 0;
 		padding: 30px;
+
 		width: clamp(300px, 40%, 1000px);
 		text-align: left;
+
+		box-shadow: 3px 0px 3px #eee, -3px 0px 3px #eee;
+
+		transition: ease .3s;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 	}
 
 	.contest-prizes, .contest-sponsors {

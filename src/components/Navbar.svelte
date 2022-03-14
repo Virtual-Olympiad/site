@@ -1,14 +1,53 @@
+<script lang="ts">
+	type navTypes = 'home' | 'about' | 'team' | 'contests';
+
+	interface navButton {
+		type?: navTypes;
+		content: string;
+		href: string;
+	}
+
+	const navButtons: navButton[] = [
+		{
+			type: 'home',
+			content: 'Home',
+			href: '/'
+		},
+		{
+			type: 'about',
+			content: 'About',
+			href: '/about'
+		},
+		{
+			type: 'team',
+			content: 'Team',
+			href: '/team'
+		},
+		{
+			type: 'contests',
+			content: 'Contests',
+			href: '/contests'
+		},
+		{
+			content: 'VO',
+			href: '/vo'
+		},
+	];
+
+	export let page: string;
+</script>
+
 <nav>
     <div class = "nav-anchor-left">
-        <a href = "/">Home</a>
-        <a href = "/about">About</a>
-        <a href = "/team">Team</a>
-        <a href = "/contests">Contests</a>
-        <a href = "/vo">VO</a>
+		{#each navButtons as navButton, i}
+			<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href}>{navButton.content}</a>
+		{/each}
     </div>
+	<!--
     <div class = "nav-anchor-right">
         <div>Portal</div>
     </div>
+	-->
 </nav>
 
 <style lang="scss">
@@ -25,10 +64,12 @@
 		height: 3em;
 		width: 100%;
 
-		padding: 1em;
+		padding: 0 1em;
 
-		background-color: $blue-main;
-		color: #fff;
+		z-index: 100;
+		
+		background-color: #fff;
+		color: #000;
 
 		.nav-anchor-left {
 			margin-right: auto;
@@ -40,10 +81,28 @@
 
 		> div {
 			display: flex;
+			align-items: center;
+
+			height: 100%;
 
 			div, a {
+				height: 100%;
 				padding: 0 10px;
-				color: #fff;
+				color: #000;
+
+				display: flex;
+				align-items: center;
+
+				border-top: 2px transparent solid;
+
+				&:hover {
+					background-color: #eee;
+				}
+
+				&.nav-current {
+					background-color: #eee;
+					border-top: 2px $blue-main solid;
+				}
 			}
 		}
 	}

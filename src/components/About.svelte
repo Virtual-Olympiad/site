@@ -33,6 +33,14 @@
 			border-left: 2px $blue-main solid;
 
 			text-align: left;
+
+			box-shadow: 3px 3px 3px #999, -1px -1px 3px #eee;
+
+			transition: ease .3s;
+
+			&:hover {
+				transform: scale(1.02);
+			}
 		}
 	}
 </style>

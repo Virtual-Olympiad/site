@@ -17,16 +17,16 @@
             [this.armX, this.armY] = [this.radius * Math.cos(this.rotate), this.radius * Math.sin(this.rotate)];
 		}
 
-		render(ctx: CanvasRenderingContext2D){
+		render(ctx: CanvasRenderingContext2D, topOffset = 0){
             ctx.strokeStyle = "#aaa"
             ctx.beginPath();
-			ctx.ellipse(this.x, this.y, this.radius, this.radius, 0, 0, 2 * Math.PI);
+			ctx.ellipse(this.x, topOffset + this.y, this.radius, this.radius, 0, 0, 2 * Math.PI);
             ctx.stroke();
 
             ctx.strokeStyle = "#333";
             ctx.beginPath();
-            ctx.moveTo(this.x, this.y);
-			ctx.lineTo(this.x + this.armX, this.y + this.armY);
+            ctx.moveTo(this.x, topOffset + this.y);
+			ctx.lineTo(this.x + this.armX, topOffset + this.y + this.armY);
             ctx.stroke();
 		}
 
@@ -47,7 +47,7 @@
     }
     
     let setup = ({width, height}) => {
-        circles.push(new Circle(leftOffset, height/2, random(0, Math.PI/100), 50));
+        circles.push(new Circle(leftOffset, 0, random(0, Math.PI/100), 50));
         for (let i = 0; i < circleCount; ++i){
             const prevCircle = circles[circles.length - 1];
             circles.push(new Circle(prevCircle.x + prevCircle.armX, prevCircle.y + prevCircle.armY, (i % 2 ? 1:-1) * random(0, Math.PI/100) , prevCircle.radius/random(1.5, 2)));
@@ -66,7 +66,7 @@
 				circles[i + 1].y = circle.y + circle.armY;
 			}
 
-			circle.render(ctx);
+			circle.render(ctx, height/2);
             circle.update();
 		}
 
@@ -75,8 +75,8 @@
 
         ctx.strokeStyle = "#0160e2";
         ctx.beginPath();
-        ctx.moveTo(lastCircle.x + lastCircle.armX, lastCircle.y + lastCircle.armY);
-        ctx.lineTo(width - points.length, lastCircle.y + lastCircle.armY);
+        ctx.moveTo(lastCircle.x + lastCircle.armX, height/2 + lastCircle.y + lastCircle.armY);
+        ctx.lineTo(width - points.length, height/2 + lastCircle.y + lastCircle.armY);
         ctx.stroke();
         
         ctx.strokeStyle = "#333";
@@ -84,7 +84,7 @@
 		ctx.beginPath();
             ctx.moveTo(width, height/2);
             for (let i = 0; i < points.length; ++i){
-                ctx.lineTo(width - i, points[i]);
+                ctx.lineTo(width - i, height/2 + points[i]);
                 if (points.length > width - leftOffset * 2){
                     points.splice(0, 1);
                     --i;
@@ -112,7 +112,7 @@
                     render({t: t, ctx: ctx, width: canvas.width, height: canvas.height});
                 }
             }
-
+            
             render({t: t, ctx: ctx, width: canvas.width, height: canvas.height});
             ++t;
         }

@@ -12,21 +12,26 @@
 	
 	let title: string;
 	let page: typeof SvelteComponentDev;
-	router ('/', () => [page, title] = [Home, 'Math et al.']);
-	router ('/about', () => [page, title] = [About, 'About • MEA']);
-	router ('/team', () => [page, title] = [Team, 'Team • MEA']);
+
+	type navTypes = 'home' | 'about' | 'team' | 'contests';
+	let navPage: navTypes;
+	
+	router ('/', () => [page, title, navPage] = [Home, 'Math et al.', 'home']);
+	router ('/about', () => [page, title, navPage] = [About, 'About • MEA', 'about']);
+	router ('/team', () => [page, title, navPage] = [Team, 'Team • MEA', 'team']);
 	router ('/contests/:contest', (ctx) => {
 		let { contest } = ctx.params;
+		navPage = 'contests';
 
 		switch (contest) {
 			case 'chesskon':
 				[page, title] = [Chesskon, 'CHESSKON • MEA']
 			break;
 			default:
-				[page, title] = [NotFound, '404 • MEA'] 
+				[page, title, navPage] = [NotFound, '404 • MEA', null] 
 		}
 	});
-	router ('/contests', () => [page, title] = [Contests, 'Contests • MEA']);
+	router ('/contests', () => [page, title, navPage] = [Contests, 'Contests • MEA', 'contests']);
 	router ('/vo', () => {
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});
@@ -46,7 +51,7 @@
 	<meta name="author" content="MEA Team">
 </svelte:head>
 
-<Navbar />
+<Navbar page = {navPage}/>
 <main>
 	<svelte:component this={page} />
 </main>
@@ -56,7 +61,15 @@
 	@import './styles/colors';
 
 	h1 {
-		color: $blue-main;
+		width: 100%;
+
+		margin: 0;
+		margin-bottom: 1em;
+		padding: 1em;
+		
+		background-color: $blue-main;
+
+		color: #fff;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 400;
@@ -64,8 +77,7 @@
 
 	main {
 		text-align: center;
-		padding: 1em;
-		margin-top: 1em;
+		margin-top: 3em;
 
 		display: flex;
 		flex-direction: column;
