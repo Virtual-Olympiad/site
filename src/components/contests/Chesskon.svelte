@@ -2,6 +2,10 @@
 
 </script>
 
+<svelte:head>
+    <meta name="description" content="CHESSKON is an international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!">
+</svelte:head>
+
 <h1>CHESSKON</h1>
 
 <article class = "contest-intro">

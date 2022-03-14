@@ -1,6 +1,10 @@
 <script lang="ts">
 </script>
 
+<svelte:head>
+    <meta name="description" content="All about Math et al!">
+</svelte:head>
+
 <h1>About</h1>
 <section class = "about">
 	<article class = "about-founding">

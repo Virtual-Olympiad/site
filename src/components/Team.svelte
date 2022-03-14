@@ -59,6 +59,10 @@
 	**/
 </script>
 
+<svelte:head>
+    <meta name="description" content="The amazing Math et al team!">
+</svelte:head>
+
 <h1>MEA Team</h1>
 
 <section class = "members">

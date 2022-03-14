@@ -46,9 +46,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-	<meta name="description" content="STEM organization aiming to help students learn and have fun">
+	<meta name="theme-color" content="#0160e2">
 	<meta name="keywords" content="math et al, mea, chesskon">
 	<meta name="author" content="MEA Team">
+
+	<meta property="og:site_name" content="Math et al">
+	<meta property="og:url" content="mathetal.netlify.app">
+	<meta property="og:image" content="/favicon.png">
+	<meta property="og:type" content="website">
 </svelte:head>
 
 <Navbar page = {navPage}/>
@@ -65,7 +70,7 @@
 
 		margin: 0;
 		margin-bottom: 1em;
-		padding: 1em;
+		padding: 1em 0;
 		
 		background-color: $blue-main;
 

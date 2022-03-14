@@ -18,6 +18,10 @@
 	});
 </script>
 
+<svelte:head>
+    <meta name="description" content="Math et al's contests and events">
+</svelte:head>
+
 <h1>Contests & Events</h1>
 
 <section class = "contests-current">

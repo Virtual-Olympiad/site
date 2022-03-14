@@ -28,6 +28,10 @@
     };
 </script>
 
+<svelte:head>
+    <meta name="description" content="STEM organization aiming to help students learn and have fun">
+</svelte:head>
+
 {#each announcements as announcement, i}
     {#if announcementToggle[i]}
         <div class = {"announcement announcement-type-" + announcement.type}>
@@ -138,7 +142,7 @@
         align-items: center;
         justify-content: center;
 
-        height: 200px;
+        min-height: 200px;
 
         > .card {
             display: flex;
@@ -147,6 +151,7 @@
             justify-content: flex-start;
 
             height: 100%;
+
             width: clamp(300px, 30%, 600px);
             margin: 20px;
             padding: 10px;
