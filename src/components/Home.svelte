@@ -139,10 +139,8 @@
 
     .cards {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
-
-        min-height: 250px;
 
         > .card {
             display: flex;
@@ -151,6 +149,7 @@
             justify-content: flex-start;
 
             height: 100%;
+            min-height: 200px;
 
             width: clamp(300px, 30%, 600px);
             margin: 0 20px;
