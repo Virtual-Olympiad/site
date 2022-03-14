@@ -153,7 +153,7 @@
             height: 100%;
 
             width: clamp(300px, 30%, 600px);
-            margin: 20px;
+            margin: 0 20px;
             padding: 10px;
 
 			background: #fff;
