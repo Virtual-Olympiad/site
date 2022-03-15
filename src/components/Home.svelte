@@ -115,6 +115,7 @@
         width: 100%;
 
         .header-description {
+            padding: 0 10px;
             color: #666;
             font-style: italic;
         }
@@ -139,7 +140,7 @@
 
     .cards {
         display: flex;
-        align-items: stretch;
+        align-items: center;
         justify-content: center;
 
         > .card {
@@ -152,7 +153,7 @@
             min-height: 200px;
 
             width: clamp(300px, 30%, 600px);
-            margin: 0 20px;
+            margin: 0 20px 20px 20px;
             padding: 10px;
 
 			background: #fff;
@@ -180,6 +181,14 @@
             .header-background {
                 display: none;
             }
+        }
+	}
+
+    @media(max-width: 960px){
+        .cards {
+            flex-direction: column;
+
+            margin: 1em 0;
         }
 	}
 </style>

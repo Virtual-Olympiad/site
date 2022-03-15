@@ -28,6 +28,8 @@
 		flex-direction: column;
 		align-items: center;
 
+		margin-bottom: 1em;
+		
 		> article {
 			width: clamp(300px, 60%, 1000px);
 

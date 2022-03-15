@@ -64,7 +64,7 @@
 		margin: 1em 0;
 		padding: 30px;
 
-		width: clamp(300px, 40%, 1000px);
+		width: clamp(300px, 60%, 1000px);
 		text-align: left;
 
 		box-shadow: 3px 0px 3px #eee, -3px 0px 3px #eee;

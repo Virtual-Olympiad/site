@@ -28,14 +28,14 @@
 			country: "ca"
 		},
 		{
-			name: "Zephyr", 
-			roles: ["Problem Writer", "Testsolver", "Outreach"],
-			country: "us"
-		},
-		{
 			name: "Void", 
 			roles: ["Problem Writer", "Testsolver"],
 			country: "in"
+		},
+		{
+			name: "Jeffrey Li", 
+			roles: ["Problem Writer", "Testsolver"],
+			country: "ca"
 		},
 		{
 			name: "BariumLanthanum", 
@@ -43,9 +43,9 @@
 			country: "ca"
 		},
 		{
-			name: "Jeffrey Li", 
-			roles: ["Problem Writer", "Testsolver"],
-			country: "ca"
+			name: "Zephyr", 
+			roles: ["Problem Writer", "Testsolver", "Outreach"],
+			country: "us"
 		},
 	];
 	
@@ -84,6 +84,8 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+
+		margin-bottom: 3em;
 
 		width: 100%;
 

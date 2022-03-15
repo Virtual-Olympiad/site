@@ -84,7 +84,7 @@
 		**/
 	}
 
-	@media(max-width: 650px){
+	@media(max-width: 720px){
 		.footer {
 			flex-direction: column;
 			align-items: center;
