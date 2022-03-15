@@ -1,19 +1,34 @@
 <script lang="ts">
 	import router from 'page';
+
+	// 
 	import Home from './components/Home.svelte';
 	import About from './components/About.svelte';
-	import Contests from './components/Contests.svelte';
 	import Team from './components/Team.svelte';
-	import NotFound from './components/404.svelte';
+	import Apply from './components/Apply.svelte';
+
+	// partials
 	import Navbar from './components/Navbar.svelte';
 	import Footer from './components/Footer.svelte';
+
+	// 404
+	import NotFound from './components/404.svelte';
+
+	// contests
+	import Contests from './components/Contests.svelte';
 	import Chesskon from './components/contests/Chesskon.svelte';
+
+	// resources 
+	import Resources from './components/Resources.svelte';
+	import POTW from './components/resources/POTW.svelte';
+
+	// ts
 	import type { SvelteComponentDev } from "svelte/internal";
 	
 	let title: string;
 	let page: typeof SvelteComponentDev;
 
-	type navTypes = 'home' | 'about' | 'team' | 'contests';
+	type navTypes = 'home' | 'about' | 'team' | 'contests' | 'resources' | 'apply';
 	let navPage: navTypes;
 	
 	router ('/', () => [page, title, navPage] = [Home, 'Math et al.', 'home']);
@@ -32,6 +47,20 @@
 		}
 	});
 	router ('/contests', () => [page, title, navPage] = [Contests, 'Contests • MEA', 'contests']);
+	router ('/resources/:resource', (ctx) => {
+		let { resource } = ctx.params;
+		navPage = 'resources';
+
+		switch (resource) {
+			case 'potw':
+				[page, title] = [POTW, 'CHESSKON • MEA']
+			break;
+			default:
+				[page, title, navPage] = [NotFound, '404 • MEA', null] 
+		}
+	});
+	router ('/resources', () => [page, title, navPage] = [Resources, 'Resources • MEA', 'resources']);
+	router ('/apply', () => [page, title, navPage] = [Apply, 'Apply • MEA', 'apply']);
 	router ('/vo', () => {
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});

@@ -1,5 +1,5 @@
 <script lang="ts">
-	type navTypes = 'home' | 'about' | 'team' | 'contests';
+	type navTypes = 'home' | 'about' | 'team' | 'contests' | 'resources' | 'apply';
 
 	let mobileNavToggle = false;
 
@@ -28,6 +28,16 @@
 			type: 'contests',
 			content: 'Contests',
 			href: '/contests'
+		},
+		{	
+			type: 'resources',
+			content: 'Resources',
+			href: '/resources'
+		},
+		{	
+			type: 'apply',
+			content: 'Join MEA',
+			href: '/apply'
 		},
 		{
 			content: 'VO',

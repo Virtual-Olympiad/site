@@ -12,17 +12,24 @@
 		</div>
 	</div>
 
+	<div class = "footer-info">
+		<h3>Information</h3>
+		<p><a href = "/about">About</a></p>
+		<p><a href = "/about#FAQ">FAQ</a></p>
+		<p><a href = "/apply">Apply to MEA</a></p>
+	</div>
+
 	<div class = "footer-resources">
 		<h3>Resources</h3>
-		<p><a href = "/contests">Handouts</a></p>
+		<p><a href = "/resources">Handouts</a></p>
+		<p><a href = "/resources#POTW">POTW</a></p>
 		<p><a href = "/vo">Virtual Olympiad</a></p>
-		<p><a href = "/vobot">VOBOT</a></p>
 	</div>
 
 	<div class = "footer-events">
 		<h3>Events</h3>
 		<p><a href = "/contests/chesskon">CHESSKON</a></p>
-		<p><a href = "/contests#Past_Problems">Past Problems</a></p>
+		<p><a href = "/contests#Past_Contests">Past Contests</a></p>
 	</div>
 </footer>
 
@@ -84,7 +91,7 @@
 		**/
 	}
 
-	@media(max-width: 720px){
+	@media(max-width: 960px){
 		.footer {
 			flex-direction: column;
 			align-items: center;
