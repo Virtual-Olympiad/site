@@ -2,7 +2,7 @@
 </script>
 <footer class="footer">
     <div class = "footer-info">
-		<h3>Math et al</h3>
+		<img class = "logo" src="/logo_stroke.png" alt="Math et al logo stroke"/>
 		<p class = "footer-copyright">© 2022-present Math et al</p>
 		<div class = "footer-links">
 			<a target = "_blank" href = "https://discord.gg/3eXC9UE6rT"><img alt = "discord" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/discord.svg"/></a>
@@ -59,6 +59,10 @@
 		h3 {
 			color: #fff;
 		}	
+
+		.logo {
+			width: 40%;
+		}
 		
 		> div {
 			display: flex;

@@ -116,11 +116,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
 
-	@media(max-height: 1000px){
-		main {
-			min-height: calc(100vh - 1em);
-		}
+		min-height: calc(100vh - 1em);
 	}
 </style>
