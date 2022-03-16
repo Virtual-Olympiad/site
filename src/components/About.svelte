@@ -1,6 +1,4 @@
 <script lang="ts">
-
-
 	interface Question {
 		title: string;
 		content: string;

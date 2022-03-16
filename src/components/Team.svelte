@@ -1,7 +1,15 @@
 <script lang="ts">
-	import Navbar from './Navbar.svelte';
+	import Select from 'svelte-select';
 
 	type Role = 'Developer' | 'Problem Writer' | 'Testsolver' | 'Outreach';
+
+	const RoleTypes = [
+		{value: 'All', label: 'All'},
+		{value: 'Developer', label: 'Developer'},
+		{value: 'Problem Writer', label: 'Problem Writer'},
+		{value: 'Testsolver', label: 'Testsolver'},
+		{value: 'Outreach', label: 'Outreach'},
+	];
 
 	interface Member {
 		name: string;
@@ -29,7 +37,7 @@
 		},
 		{
 			name: "Void", 
-			roles: ["Problem Writer", "Testsolver"],
+			roles: ["Outreach", "Testsolver"],
 			country: "in"
 		},
 		{
@@ -52,11 +60,27 @@
 	members.forEach(member => {
 		member.roles.sort();
 	});
+
 	/**
 		members.sort((a, b) => {
 			return a.name.localeCompare(b.name, 'en', { sensitivity: 'base' });
 		});
 	**/
+	
+	let filteredMembers = members;
+	let filter: string = 'All';
+
+	const filterRoles = (e) => {
+		filter = e.detail.value;
+		if (filter == 'All'){
+			filteredMembers = members;
+			return;
+		}
+
+		filteredMembers = members.filter(member => {
+			return member.roles.includes(filter as Role);
+		});
+	}
 </script>
 
 <svelte:head>
@@ -65,8 +89,9 @@
 
 <h1>MEA Team</h1>
 
+<Select placeholder={'Filter By...'} containerStyles={`width: 200px;`} items={RoleTypes} on:select={filterRoles}></Select>
 <section class = "members">
-	{#each members as member, i}
+	{#each filteredMembers as member, i}
 		<article class = "member" id = {'member-' + i}>
 			<div class = "bar"></div>
 			<div class = "member-identity"><h3>{member.name}</h3> <img class = "member-country" src={`https://flagcdn.com/${member.country}.svg`} alt={member.country} /></div>
