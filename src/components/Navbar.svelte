@@ -51,7 +51,7 @@
 <nav>
     <div class = "nav-anchor-left">
 		<a class = {"nav-logo " + (page && page == "home" ? "nav-current":"")} href="/">
-			<img class = "logo" src = "/favicon.png" alt = "Math et al"/>
+			<img class = "logo" src = "/images/favicon.png" alt = "Math et al"/>
 		</a>
 		{#each navButtons as navButton, i}
 			<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href}>{navButton.content}</a>

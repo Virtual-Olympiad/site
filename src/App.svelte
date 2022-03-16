@@ -81,7 +81,7 @@
 
 	<meta property="og:site_name" content="Math et al">
 	<meta property="og:url" content="mathetal.netlify.app">
-	<meta property="og:image" content="/favicon.png">
+	<meta property="og:image" content="/images/favicon.png">
 	<meta property="og:type" content="website">
 </svelte:head>
 

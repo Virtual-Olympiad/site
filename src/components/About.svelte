@@ -11,11 +11,11 @@
 		}, 
 		{
 			title: "What upcoming projects are MEA planning?",
-			content: "In a few months we are planning major updates to Virtual Olympiad with features including teams and Tag Mode."
+			content: "In a few months we are planning major updates to Virtual Olympiad with features including teams and Relay Mode."
 		}, 
 		{
 			title: "When will Virtual Olympiad get an update?!",
-			content: "Most of the development team (and mainly polarity) are busy with school and other things at the moment. In a few months we are planning major updates to Virtual Olympiad with features including teams and Tag Mode."
+			content: "Most of the development team (and mainly polarity) are busy with school and other things at the moment. In a few months we are planning major updates to Virtual Olympiad with features including teams and Relay Mode."
 		}, 
 		{
 			title: "What are some events MEA is planning to organize in the future?",

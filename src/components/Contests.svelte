@@ -32,7 +32,7 @@
 			CHESSKON is an international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
 		</p>
 		<p><a href="/contests/chesskon">Details >></a></p>
-		<img class = "contest-poster" src="/CHESSKON.png" alt = "CHESSKON Poster"/>
+		<img class = "contest-poster" src="/images/CHESSKON.png" alt = "CHESSKON Poster"/>
 	</article>
 
 	<section class = "contests-past" id = "Past_Contests">

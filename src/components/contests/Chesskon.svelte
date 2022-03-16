@@ -30,7 +30,7 @@
 		More prizes to come!
 	</p>
 
-	<img class = "contest-poster" src="/CHESSKON.png" alt = "CHESSKON Poster"/>
+	<img class = "contest-poster" src="/images/CHESSKON.png" alt = "CHESSKON Poster"/>
 </article>
 <article class = "contest-info" id = "Info">
 	<div class = "bar"></div>
