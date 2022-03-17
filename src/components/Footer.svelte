@@ -5,10 +5,10 @@
 		<img class = "logo" src="/images/logo_stroke.png" alt="Math et al logo stroke"/>
 		<p class = "footer-copyright">© 2022-present Math et al</p>
 		<div class = "footer-links">
-			<a target = "_blank" href = "https://discord.gg/3eXC9UE6rT"><img alt = "discord" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/discord.svg"/></a>
-			<a target = "_blank" href = "https://github.com/Math-et-al"><img alt = "github" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/github.svg"/></a>
-			<a href = "#"><img alt = "twitter" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/twitter.svg"/></a>
-			<a href = "#"><img alt = "instagram" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/instagram.svg"/></a>
+			<a target = "_blank" href = "/discord"><img alt = "discord" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/discord.svg"/></a>
+			<a target = "_blank" href = "/github"><img alt = "github" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/github.svg"/></a>
+			<a target = "_blank" href = "/twitter"><img alt = "twitter" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/twitter.svg"/></a>
+			<a href = "/email"><img alt = "email" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/gmail.svg"/></a>
 		</div>
 	</div>
 

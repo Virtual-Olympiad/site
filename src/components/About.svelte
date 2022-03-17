@@ -7,7 +7,7 @@
 	const questions: Question[] = [
 		{
 			title: "Is there a MEA Discord?",
-			content: `You can join our active Discord server <a href="https://discord.gg/3eXC9UE6rT">here</a> and participate in fun activities like POTW and The Linguistics Challenge as well as access many resources and an inclusive community.`
+			content: `You can join our active Discord server <a href="/discord">here</a> and participate in fun activities like POTW and The Linguistics Challenge as well as access many resources and an inclusive community.`
 		}, 
 		{
 			title: "What upcoming projects are MEA planning?",
@@ -56,7 +56,7 @@
 		<h3>Math et Al</h3>
 		<p>Math et al, also known as MEA, was founded in late 2021. Originally solely consisting of the Virtual Olympiad project, we evolved into a full STEM organization by early 2022.</p>
 		<p>Our goal is to make competitive math (et al) more fun and enjoyable. We host many fun events in math, computer science, physics, chess, and more. If you're interested in joining our team or helping out for an event, apply <a href="/apply">here</a>!</p>
-		<p>We have an active <a href="https://discord.gg/3eXC9UE6rT" target="_blank">discord server</a> with fun events like Problem of the Week and The Linguistics Challenge.</p>
+		<p>We have an active <a href="/discord" target="_blank">discord server</a> with fun events like Problem of the Week and The Linguistics Challenge.</p>
 	</article>
 
 	<article class = "about-projects">

@@ -65,6 +65,22 @@
 		title = 'Virtual Olympiad • MEA';
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});
+	router ('/email', () => {
+		title = 'Mail • MEA';
+		window.location.href = 'mailto:contact@mathetal.org';
+	});
+	router ('/github', () => {
+		title = 'Mail • MEA';
+		window.location.href = 'https://github.com/Math-et-al';
+	});
+	router ('/discord', () => {
+		title = 'Discord • MEA';
+		window.location.href = 'https://discord.gg/3eXC9UE6rT';
+	});
+	router ('/twitter', () => {
+		title = 'Twitter • MEA';
+		window.location.href = 'https://twitter.com/math_et_al';
+	});
 	
 	router ('*', () => [page, title] = [NotFound, '404 • MEA']);
 

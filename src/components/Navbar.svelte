@@ -74,7 +74,7 @@
 
 <div class =  {"mobile-nav " + (mobileNavToggle ? "active":"")}>
 	{#each navButtons as navButton, i}
-		<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href}>{navButton.content}</a>
+		<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href} on:click={toggleMobileNav}>{navButton.content}</a>
 	{/each}
 </div>
 

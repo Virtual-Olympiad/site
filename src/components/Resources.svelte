@@ -52,7 +52,7 @@
             <li>Week 4: Extremely Difficult (USAMO)</li>
         </ul>
         
-        <p>Often the problems will be original, made up by our very qualified problem writers. Join the <a target = "_blank" href = "https://discord.gg/3eXC9UE6rT">discord server</a> to participate!</p>
+        <p>Often the problems will be original, made up by our very qualified problem writers. Join the <a target = "_blank" href = "/discord">discord server</a> to participate!</p>
 	</article>
 </section>
 
