@@ -62,6 +62,7 @@
 	router ('/resources', () => [page, title, navPage] = [Resources, 'Resources • MEA', 'resources']);
 	router ('/apply', () => [page, title, navPage] = [Apply, 'Apply • MEA', 'apply']);
 	router ('/vo', () => {
+		title = 'Virtual Olympiad • MEA';
 		window.location.href = 'https://virtual-olympiad.herokuapp.com';
 	});
 	

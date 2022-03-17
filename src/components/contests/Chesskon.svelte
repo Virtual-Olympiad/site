@@ -12,7 +12,7 @@
 	<div class = "bar"></div>
 	<h2>Math et Al + FISKON presents...</h2> 
 	<p>
-		CHESSKON is an international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
+		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
 	</p>
 	<p><a href="#Info">More Info >></a></p>
 

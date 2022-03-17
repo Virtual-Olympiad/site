@@ -11,6 +11,7 @@
 		type?: navTypes;
 		content: string;
 		href: string;
+		target?: string;
 	}
 
 	const navButtons: navButton[] = [
@@ -41,7 +42,8 @@
 		},
 		{
 			content: 'VO',
-			href: '/vo'
+			href: '/vo',
+			target: '_blank'
 		},
 	];
 
@@ -54,7 +56,7 @@
 			<img class = "logo" src = "/images/favicon.png" alt = "Math et al"/>
 		</a>
 		{#each navButtons as navButton, i}
-			<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href}>{navButton.content}</a>
+			<a class = {page && page == navButton.type ? "nav-current":""} href = {navButton.href} target = {navButton.target ?? ""}>{navButton.content}</a>
 		{/each}
     </div>
 	<!--

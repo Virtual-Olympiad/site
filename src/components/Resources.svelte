@@ -20,8 +20,8 @@
         <p>
             Built by polarity, VO allows students to create rooms and invite friends to do highly customizable mocks using previous AMC and AIME (more sources to come) questions! You and your friends can compete or practice and see who solves more questions in a time frame of your choice! VO not only helps you prepare for math contests, but also provides a fun and competitive spin to contest math.
         </p>
-        <a>Visit VO >></a>
-        <a>VO user guide >></a>
+        <a href="/vo" target="_blank">Visit VO >></a>
+        <a href="https://github.com/polarr/virtual-olympiad/wiki/Guide" target="_blank">VO user guide >></a>
 
         <p>More exciting modes and features such as Relay or Team vs Team are planned to come soon, so stay tuned!</p>
 	</article>
@@ -30,17 +30,38 @@
 		<div class = "bar"></div>
 		<h2>CAP Solutions</h2> 
 		<p>
-			Official solutions to questions from the Canadian Association of Physicists (CAP) High School Exam are usually nonexistant, or lackluster in quality in the rare case that they exist.
+			Official solutions to questions from the Canadian Association of Physicists (CAP) High School Exam are usually nonexistant, or lackluster in quality in the rare occsasion that they exist.
         </p>
-        <p>To help physics students get access to CAP help, Jeffrey Li from Math et Al has put together high quality step by step solutions to all 25 questions from the CAP exam for the past several years.</p>
+        <p>To help physics students get access to CAP help, Jeffrey Li from Math et Al has put together high quality step by step solutions to the CAP exam for the past several years.</p>
         {#each CAPSolutions as year, i}
             <a href={`/files/` + year + `CAP_answers.pdf`} download>{year} CAP Solutions</a>
         {/each}
+	</article>
+
+    <article>
+		<div class = "bar"></div>
+		<h2>Problem of the Week</h2> 
+		<p>
+			Every week we post an (usually original) interesting problem for each of Math, Physics, and CS. 
+            The difficulty cycles every 4 weeks (with concrete math difficulty references in brackets): 
+        </p>
+        <ul>
+            <li>Week 1: Hard (Mid AIME)</li>
+            <li>Week 2: Difficult (High AIME)</li>
+            <li>Week 3: Very Difficult (USAJMO)</li>
+            <li>Week 4: Extremely Difficult (USAMO)</li>
+        </ul>
+        
+        <p>Often the problems will be original, made up by our very qualified problem writers. Join the <a target = "_blank" href = "https://discord.gg/3eXC9UE6rT">discord server</a> to participate!</p>
 	</article>
 </section>
 
 <style lang="scss">
 	@import '../../styles/colors';
+
+    li {
+        text-align: left;
+    }
 
 	.resources {
 		display: flex;
@@ -50,6 +71,7 @@
 		width: 100%;
 
 		padding: 1em;
+        margin-bottom: 3em;
 
         > article, > section {
             display: flex;

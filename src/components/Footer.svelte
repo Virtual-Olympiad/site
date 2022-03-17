@@ -23,7 +23,7 @@
 		<h3>Resources</h3>
 		<p><a href = "/resources">Handouts</a></p>
 		<p><a href = "/resources#POTW">POTW</a></p>
-		<p><a href = "/vo">Virtual Olympiad</a></p>
+		<p><a href = "/vo" target = "_blank">Virtual Olympiad</a></p>
 	</div>
 
 	<div class = "footer-events">

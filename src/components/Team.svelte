@@ -70,9 +70,10 @@
 	let filteredMembers = members;
 	let filter: string = 'All';
 
-	const filterRoles = (e) => {
-		filter = e.detail.value;
-		if (filter == 'All'){
+	const filterRoles = (e, clear = false) => {
+		filter = e.detail?.value;
+		if (filter == 'All' || clear){
+			filter = 'All';
 			filteredMembers = members;
 			return;
 		}
@@ -89,7 +90,7 @@
 
 <h1>MEA Team</h1>
 
-<Select placeholder={'Filter By...'} containerStyles={`width: 200px;`} items={RoleTypes} on:select={filterRoles}></Select>
+<Select placeholder={'Filter By...'} containerStyles={`width: 200px;`} items={RoleTypes} on:select={filterRoles} on:clear={(e)=> filterRoles(e, true)}></Select>
 <section class = "members">
 	{#each filteredMembers as member, i}
 		<article class = "member" id = {'member-' + i}>

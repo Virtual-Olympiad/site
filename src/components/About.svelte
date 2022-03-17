@@ -35,7 +35,7 @@
 		},
 		{
 			title: "Can I join the MEA team? How?",
-			content: `Applications are currently open and you can apply <a href="/apply">here</a>.`
+			content: `See <a href="/apply">here</a> for application details and availability.`
 		},
 	];
 
@@ -50,12 +50,13 @@
     <meta name="description" content="All about Math et al!">
 </svelte:head>
 
-<h1>About</h1>
+<h1>About & FAQ</h1>
 <section class = "about">
 	<article class = "about-founding">
 		<h3>Math et Al</h3>
 		<p>Math et al, also known as MEA, was founded in late 2021. Originally solely consisting of the Virtual Olympiad project, we evolved into a full STEM organization by early 2022.</p>
-		<p>Our goal is to make competitive math (et al) more fun and enjoyable. We host many fun events in math, chess, programming, and more. If you're interested in joining our team or helping out for an event, apply <a href="/apply">here</a>.</p>
+		<p>Our goal is to make competitive math (et al) more fun and enjoyable. We host many fun events in math, computer science, physics, chess, and more. If you're interested in joining our team or helping out for an event, apply <a href="/apply">here</a>!</p>
+		<p>We have an active <a href="https://discord.gg/3eXC9UE6rT" target="_blank">discord server</a> with fun events like Problem of the Week and The Linguistics Challenge.</p>
 	</article>
 
 	<article class = "about-projects">

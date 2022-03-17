@@ -47,11 +47,19 @@
 	<div class = "header-background" bind:clientWidth={width} bind:clientHeight={height}>
 		<HomeAnim width={width} height={height}/>
 	</div>
+    <div></div>
     <div class="header-title">
         <h1>Math et al.</h1>
         <p class="header-description">
             STEM organization aiming to help students learn and have fun
         </p>
+    </div>
+
+    <div class="header-social">
+        <a target = "_blank" href = "https://discord.gg/3eXC9UE6rT"><img alt = "discord" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/discord.svg"/></a>
+        <a target = "_blank" href = "https://github.com/Math-et-al"><img alt = "github" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/github.svg"/></a>
+        <a href = "#"><img alt = "twitter" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/twitter.svg"/></a>
+        <a href = "#"><img alt = "instagram" src = "https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.11.0/instagram.svg"/></a>
     </div>
 </header>
 
@@ -108,6 +116,7 @@
     }
 
     header {
+        position: relative;
         display: flex;
         flex-flow: row nowrap;
 
@@ -126,6 +135,31 @@
             margin-left: -100%;
 
             align-self: center;
+        }
+
+        .header-social {
+            position: absolute;
+            right: 0;
+            bottom: .5em;
+            flex: none;
+            margin-right: 1em;
+
+            padding: 10px 10px 5px 10px;
+
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.1), -3px 0px 3px rgba(0, 0, 0, 0.1);
+            
+            img {
+				height: 24px;
+                margin: 0 3px;
+
+                transition: ease-out .3s;
+
+                &:hover {
+                    opacity: 80%;
+                }
+			}
         }
 
 		.header-background {
@@ -173,13 +207,27 @@
 	@media(max-width: 960px), (max-height: 640px){
         header {
             background-color: #eee;
+            flex-direction: column;
+            flex-wrap: initial;
+            justify-content: space-between;
+            align-items: center;
 
             .header-title {
-                margin-left: 0;
+                flex: initial;
+                width: initial;
+                margin-left: initial;
             }
 
             .header-background {
                 display: none;
+            }
+
+            .header-social {
+                position: relative;
+                right: initial;
+                bottom: initial;
+                width: fit-content;
+                margin: 1em;
             }
         }
 	}
