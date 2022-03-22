@@ -31,7 +31,6 @@
 	<h3>Open section</h3>
 	<ul>
 		<li>Art of Problem Solving <em>$25 Coupons</em> to the top 3 finishers</li>
-		<li>Virtual Olympiad <em>Cookie version</em> to the top 3 finishers (will become valid in some time)</li>
 		<li>FISKON <em>Premium</em> for a month to all participants</li>
 	</ul>		
 	<h3>U1200 section</h3>
