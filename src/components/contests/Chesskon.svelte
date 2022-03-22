@@ -62,7 +62,7 @@
 <article class = "contest-sponsors" id="Sponsors">
 	<div class = "bar"></div>
 	<h2>Thanks to our sponsors!</h2> 
-	<img alt = "Art of Problem Solving" src = "\images\CHESSKON_AoPS_Main_Logo.png"/>
+	<img alt = "Art of Problem Solving" src = "/images/CHESSKON_AoPS_Main_Logo.png"/>
 </article>
 
 <style lang="scss">
