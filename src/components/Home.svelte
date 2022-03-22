@@ -66,7 +66,7 @@
 <section class="cards">
     <article class="card">
         <h3>CHESSKON</h3>
-        <p>Chess tourney with awesome prizes and 100+ projected participants</p>
+        <p>Chess tourney with $100+ of prizes and 100+ projected participants</p>
         <footer>
             <a href="/contests/chesskon">Details >></a>
         </footer>

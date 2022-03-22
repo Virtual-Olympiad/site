@@ -14,6 +14,9 @@
 	<p>
 		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
 	</p>
+	<p>
+		Thanks to <a href="https://artofproblemsolving.com">Art of Problem Solving</a> for sponsoring us!
+	</p>
 	<p><a href="#Info">More Info >></a></p>
 
 	<h3>To sign up...</h3>
@@ -24,13 +27,18 @@
 <article class = "contest-prizes">
 	<div class = "bar"></div>
 	<h2>Prizes</h2> 
-	<p>
-		FISKON Premium to the top contestants.
-		Virtual Olympiad Premium to the top contestants.
-		More prizes to come!
-	</p>
-
-	<img class = "contest-poster" src="/images/CHESSKON.png" alt = "CHESSKON Poster"/>
+	<p>Thanks to our <a href="#Sponsors">sponsors!</a></p>
+	<h3>Open section</h3>
+	<ul>
+		<li>Art of Problem Solving <em>$25 Coupons</em> to the top 3 finishers</li>
+		<li>Virtual Olympiad <em>Cookie version</em> to the top 3 finishers (will become valid in some time)</li>
+		<li>FISKON <em>Premium</em> for a month to all participants</li>
+	</ul>		
+	<h3>U1200 section</h3>
+	<ul>
+		<li>$25 Art of Problem Solving Coupon to the winner</li>
+		<li>FISKON <em>Premium</em> for a month to all participants</li>
+	</ul>
 </article>
 <article class = "contest-info" id = "Info">
 	<div class = "bar"></div>
@@ -51,10 +59,10 @@
 	<p>Join the <a target = "_blank" href = "https://www.chess.com/club/chesskon">chess.com club</a> for the matches!</p>
 	<p>(Must complete both steps to participate)</p>
 </article>
-<article class = "contest-sponsors">
+<article class = "contest-sponsors" id="Sponsors">
 	<div class = "bar"></div>
 	<h2>Thanks to our sponsors!</h2> 
-	<img height = "100px" title = "Not Copium" alt = "Copium" src = "https://gumlet.assettype.com/afkgaming%2F2021-08%2F79649079-d0e7-4acd-853b-6a2b92797da3%2Fcopium_png.png?format=auto"/>
+	<img alt = "Art of Problem Solving" src = "\images\CHESSKON_AoPS_Main_Logo.png"/>
 </article>
 
 <style lang="scss">
@@ -82,6 +90,13 @@
 		align-items: center;
 
 		text-align: center;
+	}
+	
+	.contest-sponsors img {
+		width: 100%;
+		max-height: max-content;
+
+		box-shadow: 2px 0px 2px #eee, -2px 0px 2px #eee;
 	}
 
 	.contest-poster {

@@ -1,14 +1,15 @@
 <script lang="ts">
 	import Select from 'svelte-select';
 
-	type Role = 'Developer' | 'Problem Writer' | 'Testsolver' | 'Outreach';
+	type Role = 'Developer' | 'Problem Writer' | 'Testsolver' | 'Media' | 'Events' | 'Resource Creator';
 
 	const RoleTypes = [
-		{value: 'All', label: 'All'},
 		{value: 'Developer', label: 'Developer'},
 		{value: 'Problem Writer', label: 'Problem Writer'},
 		{value: 'Testsolver', label: 'Testsolver'},
-		{value: 'Outreach', label: 'Outreach'},
+		{value: 'Media', label: 'Media'},
+		{value: 'Events', label: 'Events'},
+		{value: 'Resource Creator', label: 'Resource Creator'},
 	];
 
 	interface Member {
@@ -21,13 +22,13 @@
 	const members: Member[] = [
 		{
 			name: "Polarity", 
-			roles: ["Developer", "Problem Writer", "Testsolver"],
+			roles: ["Developer", "Events", "Problem Writer", "Resource Creator"],
 			country: "ca"
 
 		},
 		{
 			name: "TheCelestialCube", 
-			roles: ["Problem Writer", "Testsolver"],
+			roles: ["Events", "Problem Writer", "Resource Creator"],
 			country: "ca"
 		},
 		{
@@ -37,23 +38,28 @@
 		},
 		{
 			name: "Void", 
-			roles: ["Outreach", "Testsolver"],
+			roles: ["Events", "Testsolver"],
 			country: "in"
 		},
 		{
 			name: "Jeffrey Li", 
-			roles: ["Problem Writer", "Testsolver"],
+			roles: ["Problem Writer"],
 			country: "ca"
 		},
 		{
 			name: "BariumLanthanum", 
-			roles: ["Problem Writer", "Testsolver"],
+			roles: ["Problem Writer"],
 			country: "ca"
 		},
 		{
 			name: "Zephyr", 
-			roles: ["Problem Writer", "Testsolver", "Outreach"],
+			roles: ["Media", "Testsolver"],
 			country: "us"
+		},
+		{
+			name: ".A", 
+			roles: ["Resource Creator", "Testsolver"],
+			country: "ca"
 		},
 	];
 	
