@@ -3,47 +3,49 @@
 </script>
 
 <svelte:head>
-    <meta name="description" content="CHESSKON is an international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!">
+    <meta name="description" content="CHESSKON is an international chess tournament hosted by Math et Al and FISKON with $150+ worth of prizes. Particpants can choose to participate in either the Open or U1200 section.">
 </svelte:head>
 
-<h1>CHESSKON</h1>
+<h1>
+	CHESSKON
+	<p>Sponsored by Art of Problem Solving</p>
+</h1>
 
 <article class = "contest-intro">
 	<div class = "bar"></div>
 	<h2>Math et Al + FISKON presents...</h2> 
 	<p>
-		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and great prizes for participants!
+		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON with $150+ worth of prizes. Particpants can choose to participate in either the Open or U1200 section.
 	</p>
-	<p>
-		Thanks to <a href="https://artofproblemsolving.com">Art of Problem Solving</a> for sponsoring us!
-	</p>
-	<p><a href="#Info">More Info >></a></p>
+	<p><a href="#Prizes">See Prizes >></a></p>
+	<p><a href="#Info">Jump to Info >></a></p>
+	<p><a href="#Sponsors">Thanks to our sponsors!</a></p>
 
 	<h3>To sign up...</h3>
 	<p>Fill out the <a target = "_blank" href = "https://forms.gle/mSLgzZRGNoPL2ikS8">sign up form</a></p>
 	<p>Join the <a target = "_blank" href = "https://www.chess.com/club/chesskon">chess.com club</a> for the matches!</p>
 	<p>(Must complete both steps to participate)</p>
 </article>
-<article class = "contest-prizes">
+<article class = "contest-prizes" id="Prizes">
 	<div class = "bar"></div>
 	<h2>Prizes</h2> 
-	<p>Thanks to our <a href="#Sponsors">sponsors!</a></p>
+	<p>Prizes are made available thanks to our <a href="#Sponsors">sponsors</a>.</p>
 	<h3>Open section</h3>
 	<ul>
-		<li>Art of Problem Solving <em>$25 Coupons</em> to the top 3 finishers</li>
-		<li>FISKON <em>Premium</em> for a month to all participants</li>
+		<li>$25 Art of Problem Solving Coupons to the top 3 finishers</li>
+		<li>FISKON Premium for a month to all participants</li>
 	</ul>		
 	<h3>U1200 section</h3>
 	<ul>
 		<li>$25 Art of Problem Solving Coupon to the winner</li>
-		<li>FISKON <em>Premium</em> for a month to all participants</li>
+		<li>FISKON Premium for a month to all participants</li>
 	</ul>
 </article>
 <article class = "contest-info" id = "Info">
 	<div class = "bar"></div>
 	<h2>Info</h2> 
 	<p>
-		CHESSKON has an open section and a U1200 section (suggested rating). Anyone can choose to join either of the sections. However, if you are over 1200 elo rating we strongly suggest you join the open section for far better prizes and competitive matches.
+		CHESSKON has an Open section and a U1200 section (suggested rating). Anyone can choose to join the Open section (although if you are under 1200 elo it is suggested you join U1200). However, if you are over 1200 elo rating you must join the Open section for superior prizes and competitive matches.
 	</p>
 	<h3>Date</h3> 
 	<p><em>Specific hours to be determined</em></p>
@@ -61,7 +63,9 @@
 <article class = "contest-sponsors" id="Sponsors">
 	<div class = "bar"></div>
 	<h2>Thanks to our sponsors!</h2> 
-	<img alt = "Art of Problem Solving" src = "/images/CHESSKON_AoPS_Main_Logo.png"/>
+	<p>If you would like to sponsor us, contact us at contact@mathetal.org</p>
+	<a href="https://artofproblemsolving.com" target="_blank"><img alt = "Art of Problem Solving" src = "/images/CHESSKON_AoPS_Main_Logo.png"/></a>
+	<p><a href="/files/CHESSKON_AoPS_FlyersForSponsorships.pdf">Learn more about AoPS >></a></p>
 </article>
 
 <style lang="scss">
@@ -94,8 +98,11 @@
 	.contest-sponsors img {
 		width: 100%;
 		max-height: max-content;
+		padding: 1em;
 
-		box-shadow: 2px 0px 2px #eee, -2px 0px 2px #eee;
+		border-radius: 10px;
+
+		box-shadow: 2px 0px 1px #eee, -2px 0px 1px #eee;
 	}
 
 	.contest-poster {

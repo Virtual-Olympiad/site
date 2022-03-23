@@ -43,7 +43,7 @@
 		},
 		{
 			name: "Jeffrey Li", 
-			roles: ["Problem Writer"],
+			roles: ["Problem Writer", "Resource Creator"],
 			country: "ca"
 		},
 		{

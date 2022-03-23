@@ -124,6 +124,12 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 400;
+
+		> p {
+			text-transform: initial;
+			font-size: initial;
+			font-weight: initial;
+		}
 	}
 
 	main {
