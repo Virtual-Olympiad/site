@@ -17,49 +17,57 @@
 		roles: Role[];
 		country?: string;
 		interests?: string;
+		description?: string;
 	}
 
 	const members: Member[] = [
 		{
 			name: "Polarity", 
 			roles: ["Developer", "Events", "Problem Writer", "Resource Creator"],
-			country: "ca"
-
+			country: "ca",
+			description: "Polarity is a national olympiad qualifier who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing tetris, ping pong, and reading manga in his free time."
 		},
 		{
 			name: "TheCelestialCube", 
 			roles: ["Events", "Problem Writer", "Resource Creator"],
-			country: "ca"
+			country: "ca",
+			description: "TheCelestialCube is a sophomore interested in math with achievements such as top 3 on the CTMC and top 20 on the CSMC. He enjoys listening to music, playing chess, and reading chinese light novels."
 		},
 		{
 			name: "AlwaysAJoke", 
 			roles: ["Developer"],
-			country: "ca"
+			country: "ca",
+			description: "AlwaysAJoke is a competitive programmer who also enjoys math, NLP, and robotics. He has more than 800 volunteer hours and a black belt in karate. In his free time he plays badminton."
 		},
 		{
 			name: "Void", 
 			roles: ["Events", "Testsolver"],
-			country: "in"
+			country: "in",
+			description: "Void is a Science and Maths guy whose ears perk up whenever someone talks about anything related to linux, rubiks cube, movies, anime, and novels. He likes to write blogs and poetry in his free time and is a 2 time RMO qualifier."
 		},
 		{
 			name: "Jeffrey Li", 
 			roles: ["Problem Writer", "Resource Creator"],
-			country: "ca"
+			country: "ca",
+			description: "Jeffrey is a Physics student with achievements from a variety of contests including CAP and CAYPT. He is also interested in Business, placing 5th in FBLA security investment and obtaining a silver award on ASDAN. He plays tennis in his free time."
 		},
 		{
 			name: "BariumLanthanum", 
 			roles: ["Problem Writer"],
-			country: "ca"
+			country: "ca",
+			description: "BariumLanthanum is a CS enthusiast mainly focused on AI and Data Science who also enjoys doing Math and Physics. He likes to play video games such as krunker.io."
 		},
 		{
 			name: "Zephyr", 
 			roles: ["Media", "Testsolver"],
-			country: "us"
+			country: "us",
+			description: "Zephyr is a middle schooler from the US. He is very involved in the STEM community and is a member of several organizations."
 		},
 		{
 			name: ".A", 
 			roles: ["Resource Creator", "Testsolver"],
-			country: "ca"
+			country: "ca",
+			description: ".A is an Engineering enthusiast who has designed many models and small inventions. He likes to play realistic flight simulators and FPS games in his free time, and is a competitive swimmer."
 		},
 	];
 	
@@ -103,6 +111,7 @@
 			<div class = "bar"></div>
 			<div class = "member-identity"><h3>{member.name}</h3> <img class = "member-country" src={`https://flagcdn.com/${member.country}.svg`} alt={member.country} /></div>
 			<p class = "member-roles">{member.roles.join(' • ')}</p>
+			<p class = "member-description">{member.description ?? ""}</p>
 		</article>
 	{/each}
 </section>
@@ -123,6 +132,7 @@
 
 		.member {
 			min-width: 300px;
+			max-width: 400px;
 			
 			padding: 20px;
 			margin: 1em;
@@ -157,6 +167,10 @@
 				color: #666;
 				font-size: 14px;
 				font-style: italic;
+			}
+
+			.member-description {
+				margin-top: 2em;
 			}
 		}
 	}

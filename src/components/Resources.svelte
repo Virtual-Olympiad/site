@@ -1,5 +1,5 @@
 <script lang="ts">
-	const CAPSolutions = [2014, 2015, 2016, 2017, 2018, 2019].sort((a, b)=> b - a);
+	const CAPSolutions = [2013, 2014, 2015, 2016, 2017, 2018, 2019].sort((a, b)=> b - a);
 </script>
 
 <svelte:head>
@@ -34,7 +34,7 @@
         </p>
         <p>To help physics students get access to CAP help, Jeffrey Li from Math et Al has put together high quality step by step solutions to the CAP exam for the past several years.</p>
         {#each CAPSolutions as year, i}
-            <a href={`/files/` + year + `CAP_answers.pdf`} download>{year} CAP Solutions</a>
+            <a href={`/files/` + year + `CAP_answers.pdf`} target="_blank">{year} CAP Solutions</a>
         {/each}
 	</article>
 

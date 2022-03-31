@@ -81,6 +81,10 @@
 		title = 'Twitter • MEA';
 		window.location.href = 'https://twitter.com/math_et_al';
 	});
+	router ('/applyform', () => {
+		title = 'Application Form • MEA';
+		window.location.href = 'https://forms.gle/V2vAiX22XuTrUnz79';
+	});
 	
 	router ('*', () => [page, title] = [NotFound, '404 • MEA']);
 
