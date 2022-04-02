@@ -15,7 +15,7 @@
 	<div class = "bar"></div>
 	<h2>Math et Al + FISKON presents...</h2> 
 	<p>
-		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON with $150+ worth of prizes. Particpants can choose to participate in either the Open or U1200 section.
+		CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON with $150+ worth of prizes. Particpants can choose to participate in either the Open or U1200 section. The contest will be held on April 9th and 10th.
 	</p>
 	<p><a href="#Prizes">See Prizes >></a></p>
 	<p><a href="#Info">Jump to Info >></a></p>
@@ -49,8 +49,8 @@
 	</p>
 	<h3>Date</h3> 
 	<p><em>Specific hours to be determined</em></p>
-	<p>Open - Qualifying Arena @ April 3, Top 8 Knockout Bracket @ April 10</p>
-	<p>U1200 - Arena @ April 3</p>
+	<p>Open - Qualifying Arena @ April 9, Top 8 Knockout Bracket @ April 10</p>
+	<p>U1200 - Arena @ April 9</p>
 	<h3>Format</h3> 
 	<p>Open - Qualifying Arena: 5+3. Top 8 from Arena move on to the finals with a Bracket Knockout: 10+3 format. Ties in Knockout are settled with an armageddon: White 5+0, Black 4+0 but White must win. Top finishers win prizes.</p>
 	<p>U1200 - Arena: 5+3. Top finishers win prizes.</p>
