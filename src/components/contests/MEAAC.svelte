@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <meta name="description" content="CHESSKON is an international chess tournament hosted by Math et Al and FISKON with $150+ worth of prizes. Particpants can choose to participate in either the Open or U1200 section.">
+    <meta name="description" content="Math et al's first anniversary Math + Physics contest featuring high quality original problems on contest math and physics!">
 </svelte:head>
 
 <h1>
