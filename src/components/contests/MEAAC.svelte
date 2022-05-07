@@ -26,7 +26,7 @@
 	<p><a href="#Prizes">Participants can also win prizes! >></a></p>
 
 	<h3>To participate...</h3>
-    <p>Both members must be in the active 100+ member Math et al <a target = "_blank" href = "/discord">Discord Server</a>!</p>
+    <p>Both members must be in the Math et al <a target = "_blank" href = "/discord">Discord Server</a>!</p>
 	<p>Team Leader can fill out the <a target = "_blank" href = "https://forms.gle/AQZ4xjrsKFyjFJoU9">submission form</a> with their solutions before the deadline</p>
 </article>
 <article class = "contest-info" id = "Info">
@@ -49,7 +49,7 @@
         <li>No resources allowed (internet, books, wolframalpha etc)</li>
         <li>No communication about the problems with anyone other than teammate(s)</li>
     </ul>
-    <p>Both members must be in the active 100+ member Math et al <a target = "_blank" href = "/discord">Discord Server</a>!</p>
+    <p>Both members must be in the Math et al <a target = "_blank" href = "/discord">Discord Server</a>!</p>
 </article>
 <article class = "contest-prizes" id="Prizes">
     <div class = "bar"></div>
