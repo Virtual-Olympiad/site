@@ -21,7 +21,7 @@
         <br/><br/>
         Members can participate in teams up to two and we encourage each Math specialized member to find a Physics one to collaborate and vice versa.
 	</p>
-    <p><em>The question paper will be posted when MEAAC starts at 12am on May 12</em></p>
+    <p><em>The question paper will be posted when MEAAC starts at noon on May 12</em></p>
     <p><a href="#Info">Info >></a></p>
 	<p><a href="#Prizes">Participants can also win prizes! >></a></p>
 
@@ -33,7 +33,7 @@
     <div class = "bar"></div>
 	<h2>Info</h2> 
 	<h3>Date</h3> 
-	<p>MEAAC submissions will start on May 12 12am EST and end on May 19 12am EST</p>
+	<p>MEAAC submissions will start on May 12 12pm ET and end on May 19 12pm ET</p>
 	<h3>Format</h3> 
     <p>
         There will be 5 Math and 5 Physics questions, some with subquestions. The difficulty of both subjects range from Low AIME to Low-Medium Olympiad level. Participate in teams up to 2.
