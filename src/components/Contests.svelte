@@ -3,10 +3,16 @@
 		name: string;
 		year: number;
 		description?: string;
+		link?: string;
 	}
 
 	const contests: Contest[] = [
-		
+		{
+			name: "CHESSKON",
+			year: 2022,
+			description: "A free to join international chess tournament hosted by Math et Al and FISKON. Had both an Open section and a U1200 section and more than $100 in prizes.",
+			link: "/contests/chesskon"
+		}
 	];
 
 	contests.sort((a, b) => {
@@ -27,12 +33,11 @@
 <section class = "contests">
 	<article class = "contests-current">
 		<div class = "bar"></div>
-		<h2>CHESSKON</h2> 
+		<h2>MEAAC 1</h2> 
 		<p>
-			CHESSKON is a free to join international chess tournament hosted by Math et Al and FISKON. We have an open section and a U1200 section and more than $100 in prizes for participants!
+			Our first anniversary Math + Physics contest featuring high quality original problems on contest math and physics! Participate in teams up to 2.
 		</p>
-		<p><a href="/contests/chesskon">Details >></a></p>
-		<img class = "contest-poster" src="/images/CHESSKON.png" alt = "CHESSKON Poster"/>
+		<p><a href="/contests/meaac">Details >></a></p>
 	</article>
 
 	<section class = "contests-past" id = "Past_Contests">
@@ -43,7 +48,7 @@
 
 		{#each contests as contest, i}
 			<article>
-				<h3>{contest.name} {contest.year}</h3>
+				<a href={contest.link}><h3>{contest.name} {contest.year}</h3></a>
 				<p>{contest.description}</p>
 			</article>
 		{/each}
@@ -67,12 +72,10 @@
 		padding: 1em;
 	}
 
-	.contests-current, .contests-past {
+	.contests-current, .contests-past, article{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		width: clamp(460px, 40%, 1000px);
 
 		margin: 1em;
 		padding: 30px;
@@ -84,6 +87,10 @@
 		&:hover {
 			transform: scale(1.02);
 		}
+	}
+
+	.contests-current, .contests-past {
+		width: clamp(460px, 40%, 1000px);
 	}
 
 	.contest-poster {

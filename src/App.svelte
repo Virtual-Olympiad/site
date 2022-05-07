@@ -17,6 +17,7 @@
 	// contests
 	import Contests from './components/Contests.svelte';
 	import Chesskon from './components/contests/Chesskon.svelte';
+	import MEAAC from './components/contests/MEAAC.svelte';
 
 	// resources 
 	import Resources from './components/Resources.svelte';
@@ -41,6 +42,9 @@
 		switch (contest) {
 			case 'chesskon':
 				[page, title] = [Chesskon, 'CHESSKON • MEA']
+			break;
+			case 'meaac':
+				[page, title] = [MEAAC, 'MEAAC • MEA']
 			break;
 			default:
 				[page, title, navPage] = [NotFound, '404 • MEA', null] 

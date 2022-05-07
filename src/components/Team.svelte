@@ -25,7 +25,7 @@
 			name: "Polarity", 
 			roles: ["Developer", "Events", "Problem Writer", "Resource Creator"],
 			country: "ca",
-			description: "Polarity is a national olympiad qualifier who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing tetris, ping pong, and reading manga in his free time."
+			description: "Polarity is a top 20 national olympiad contestant who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing tetris, ping pong, and reading manga in his free time."
 		},
 		{
 			name: "TheCelestialCube", 

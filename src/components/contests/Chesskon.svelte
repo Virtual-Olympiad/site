@@ -7,7 +7,7 @@
 </svelte:head>
 
 <h1>
-	CHESSKON
+	CHESSKON [ENDED]
 	<p>Sponsored by Art of Problem Solving</p>
 </h1>
 

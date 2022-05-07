@@ -65,10 +65,10 @@
 
 <section class="cards">
     <article class="card">
-        <h3>CHESSKON</h3>
-        <p>Chess tourney with $100+ of prizes and 100+ projected participants</p>
+        <h3>MAT 1</h3>
+        <p>Math et al's first anniversary Math + Physics contest</p>
         <footer>
-            <a href="/contests/chesskon">Details >></a>
+            <a href="/contests/meaac">Details >></a>
         </footer>
     </article>
     <article class="card">
