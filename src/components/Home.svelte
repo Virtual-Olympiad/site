@@ -65,7 +65,7 @@
 
 <section class="cards">
     <article class="card">
-        <h3>MAT 1</h3>
+        <h3>MEAAC 1</h3>
         <p>Math et al's first anniversary Math + Physics contest</p>
         <footer>
             <a href="/contests/meaac">Details >></a>
