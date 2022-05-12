@@ -21,7 +21,7 @@
         <br/><br/>
         Members can participate in teams up to two and we encourage each Math specialized member to find a Physics one to collaborate and vice versa.
 	</p>
-    <p><em>The question paper will be posted when MEAAC starts at noon on May 12</em></p>
+    <p><b>You can find the problems <a target="_blank" href="/files/meaac1.pdf">HERE</a>!</b></p>
     <p><a href="#Info">Info >></a></p>
 	<p><a href="#Prizes">Participants can also win prizes! >></a></p>
 
