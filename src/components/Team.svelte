@@ -53,10 +53,9 @@
 		},
 		{
 			name: "BariumLanthanum", 
-			roles: ["Problem Writer"],
+			roles: ["Problem Writer", "Testsolver", "Developer"],
 			country: "ca",
-			description: "BariumLanthanum is a CS enthusiast mainly focused on AI and Data Science who also enjoys doing Math and Physics. He likes to play video games such as krunker.io."
-		},
+			description: "BariumLanthanum is a CS enthusiast who enjoys developing software in his free time, mainly AI stuff. He is also very interested in math and physics. He enjoys listening to music, watching movies and anime, and playing videogames."
 		{
 			name: "Zephyr", 
 			roles: ["Media", "Testsolver"],
