@@ -25,7 +25,7 @@
 			name: "Polarity", 
 			roles: ["Developer", "Events", "Problem Writer", "Resource Creator"],
 			country: "ca",
-			description: "Polarity is a top 20 national olympiad contestant who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing tetris, ping pong, and reading manga in his free time."
+			description: "Polarity is a top 20 CMO contestant who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing basketball, tetris, and reading manga in his free time."
 		},
 		{
 			name: "TheCelestialCube", 
@@ -49,13 +49,13 @@
 			name: "Jeffrey Li", 
 			roles: ["Problem Writer", "Resource Creator"],
 			country: "ca",
-			description: "Jeffrey is a Physics student with achievements from a variety of contests including CAP and CAYPT. He is also interested in Business, placing 5th in FBLA security investment and obtaining a silver award on ASDAN. He plays tennis in his free time."
+			description: "Jeffrey is a Physics student with achievements from a variety of contests including CAP and CAYPT who achieved #11 global on the SIN contest. He is also interested in Business, placing 5th in FBLA security investment and obtaining a silver award on ASDAN. He plays tennis in his free time."
 		},
 		{
 			name: "BariumLanthanum", 
 			roles: ["Problem Writer", "Testsolver", "Developer"],
 			country: "ca",
-			description: "BariumLanthanum is a CS enthusiast who enjoys developing software in his free time, mainly AI stuff. He is also very interested in math and physics. He enjoys listening to music, watching movies and anime, and playing videogames."
+			description: "BariumLanthanum is a CS enthusiast who enjoys developing software in his free time, mainly AI stuff. He is also very interested in math and physics. He enjoys listening to music, watching movies and anime, and playing video games."
 		},
 		{
 			name: "Zephyr", 
@@ -68,6 +68,30 @@
 			roles: ["Resource Creator", "Testsolver"],
 			country: "ca",
 			description: ".A is an Engineering enthusiast who has designed many models and small inventions. He likes to play realistic flight simulators and FPS games in his free time, and is a competitive swimmer."
+		},
+		{
+			name: "aileem", 
+			roles: ["Testsolver"],
+			country: "ca",
+			description: ""
+		},
+		{
+			name: "body wash", 
+			roles: ["Problem Writer", "Testsolver"],
+			country: "ca",
+			description: ""
+		},
+		{
+			name: "DaveDev", 
+			roles: ["Developer"],
+			country: "de",
+			description: ""
+		},
+		{
+			name: "Enrico", 
+			roles: ["Events"],
+			country: "ca",
+			description: ""
 		},
 	];
 	
