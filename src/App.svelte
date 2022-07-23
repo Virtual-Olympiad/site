@@ -105,7 +105,7 @@
 	<meta name="author" content="MEA Team">
 
 	<meta property="og:site_name" content="Math et al">
-	<meta property="og:url" content="mathetal.netlify.app">
+	<meta property="og:url" content="mathetal.org">
 	<meta property="og:image" content="/images/favicon.png">
 	<meta property="og:type" content="website">
 </svelte:head>

@@ -73,7 +73,7 @@
 			name: "aileem", 
 			roles: ["Testsolver"],
 			country: "ca",
-			description: ""
+			description: "aileem is a high school student interested in Math and CS. She is a tester of various competitive programming contests. She has a severe case of anime addiction."
 		},
 		{
 			name: "body wash", 
