@@ -106,7 +106,7 @@
 			description: "Mark is a 5th grader who has won hundreds of national and international STEM competitions. He has qualified for both USAJMO and CJMO. Mark enjoys challenges, chess, programming, art, and musical instruments. He also loves sports especially biking, skiing, kayaking, basketball, and table tennis."
 		},
 		{
-			name: "GPU", 
+			name: "Goldengold123", 
 			roles: ["Testsolver"],
 			country: "ca",
 			description: ""
