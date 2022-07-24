@@ -73,13 +73,13 @@
 			name: "aileem", 
 			roles: ["Testsolver"],
 			country: "ca",
-			description: "aileem is a high school student interested in Math and CS. She is a tester of various competitive programming contests. She has a severe case of anime addiction."
+			description: "Aileem is a high school student interested in Math and CS. She is a tester of various competitive programming contests. She has a severe case of anime addiction."
 		},
 		{
 			name: "body wash", 
 			roles: ["Problem Writer", "Testsolver"],
 			country: "ca",
-			description: ""
+			description: "Body wash enjoys solving math problems, playing video games and watching anime. His favorite math topics are algebra and geometry."
 		},
 		{
 			name: "DaveDev", 
@@ -90,6 +90,36 @@
 		{
 			name: "Enrico", 
 			roles: ["Events"],
+			country: "ca",
+			description: ""
+		},
+		{
+			name: "andyloo", 
+			roles: ["Testsolver"],
+			country: "ca",
+			description: "Andyloo is a high school student who is interested in Math and CS. He has done many math contests and is a tester for several competitive programming contests. In his free time, he enjoys playing hockey and tennis, playing chess, and doing Math."
+		},
+		{
+			name: "Mark 🌙", 
+			roles: ["Developer"],
+			country: "ca",
+			description: "Mark is a 5th grader who has won hundreds of national and international STEM competitions. He has qualified for both USAJMO and CJMO. Mark enjoys challenges, chess, programming, art, and musical instruments. He also loves sports especially biking, skiing, kayaking, basketball, and table tennis."
+		},
+		{
+			name: "GPU", 
+			roles: ["Testsolver"],
+			country: "ca",
+			description: ""
+		},
+		{
+			name: "Oxfordcomma", 
+			roles: ["Problem Writer", "Testsolver"],
+			country: "ca",
+			description: ""
+		},
+		{
+			name: "Automata Theory Fan", 
+			roles: ["Problem Writer"],
 			country: "ca",
 			description: ""
 		},
