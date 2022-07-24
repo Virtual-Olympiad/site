@@ -40,6 +40,21 @@
 
     <article>
 		<div class = "bar"></div>
+		<h2>Art of the Flag</h2> 
+		<p>
+			As the popularity of Chess has exploded over the past few years, the general
+            inclination has been to play in faster time controls. More traditional classical
+            time controls such as 90+30 are simply too slow to be engaging, and as such,
+            tournaments have evolved towards faster and more exciting time controls. It is
+            becoming more and more crucial for players to move quickly, as they could lose
+            through running out of time. 
+        </p>
+        <p>With that said, TheCelestialCube presents a handout on the fundamentals of <em>Flagging</em> and bending time to your advantage.</p>
+        <a href="/files/aotf.pdf" target="_blank">Art of the Flag</a>
+	</article>
+
+    <article>
+		<div class = "bar"></div>
 		<h2>Problem of the Week</h2> 
 		<p>
 			Every week we post an (usually original) interesting problem for each of Math, Physics, and CS. 
