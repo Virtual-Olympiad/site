@@ -103,17 +103,17 @@
 			name: "Mark 🌙", 
 			roles: ["Developer"],
 			country: "ca",
-			description: "Mark is a 5th grader who has won hundreds of national and international STEM competitions. He has qualified for both USAJMO and CJMO. Mark enjoys challenges, chess, programming, art, and musical instruments. He also loves sports especially biking, skiing, kayaking, basketball, and table tennis."
+			description: "Mark has won hundreds of national and international STEM competitions and qualified for both USAJMO and CJMO in 5th grade. Mark enjoys challenges, chess, programming, art, and music. He also loves sports, especially biking, skiing, kayaking, basketball, and table tennis."
 		},
 		{
 			name: "Goldengold123", 
-			roles: ["Testsolver"],
+			roles: ["Developer", "Testsolver"],
 			country: "ca",
 			description: ""
 		},
 		{
 			name: "Oxfordcomma", 
-			roles: ["Problem Writer", "Testsolver"],
+			roles: ["Events", "Problem Writer", "Testsolver"],
 			country: "ca",
 			description: ""
 		},
