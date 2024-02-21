@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Select from 'svelte-select';
 
-	type Role = 'Developer' | 'Problem Writer' | 'Testsolver' | 'Media' | 'Events' | 'Resource Creator';
+	type Role = 'Developer' | 'Problem Writer' | 'Testsolver' | 'Media' | 'Events' | 'Resource Creator' | 'Media Campaign Coordinator';
 
 	const RoleTypes = [
 		{value: 'Developer', label: 'Developer'},
@@ -10,6 +10,7 @@
 		{value: 'Media', label: 'Media'},
 		{value: 'Events', label: 'Events'},
 		{value: 'Resource Creator', label: 'Resource Creator'},
+		{value: 'Media Campaign Coordinator', label: 'Media Campaign Coordinator'},
 	];
 
 	interface Member {
@@ -25,7 +26,7 @@
 			name: "Polarity", 
 			roles: ["Developer", "Events", "Problem Writer", "Resource Creator"],
 			country: "ca",
-			description: "Polarity is a top 20 CMO contestant who is interested in Math and CS: specifically web development, security, and algorithmics. He enjoys playing basketball, tetris, and reading manga in his free time."
+			description: "Polarity is a national math champion who is also interested in CS: specifically web development, security, and algorithmics. He enjoys running, lifting, playing tennis, tetris, and reading in his free time."
 		},
 		{
 			name: "TheCelestialCube", 
@@ -123,6 +124,12 @@
 			country: "ca",
 			description: ""
 		},
+		{
+			name: "William Jiang",
+			roles: ["Media Campaign Coordinator"],
+			country: "ca",
+			description: "William is a high school senior interested in math, computer science, and physics. He plays hockey and develops machine learning projects in his free time."
+		}
 	];
 	
 	members.forEach(member => {
