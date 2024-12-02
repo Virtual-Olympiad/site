@@ -67,7 +67,7 @@
 	router ('/apply', () => [page, title, navPage] = [Apply, 'Apply • MEA', 'apply']);
 	router ('/vo', () => {
 		title = 'Virtual Olympiad • MEA';
-		window.location.href = 'https://virtual-olympiad.herokuapp.com';
+		window.location.href = 'https://voly.mathetal.org';
 	});
 	router ('/email', () => {
 		title = 'Mail • MEA';
